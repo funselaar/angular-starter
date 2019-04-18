@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from './components/nav/menu-item';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+
+  menuItems: MenuItem[] = [
+    { link: '/dashboard', title: 'Dashboard' },
+    { link: '/table', title: 'Table' },
+  ]
+
 }
