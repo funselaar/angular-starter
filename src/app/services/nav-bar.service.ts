@@ -28,14 +28,12 @@ export class NavBarService {
     this.setTitle(title);
     this.setBackButtonHidden(true);
     this.setToolbarItems([]);
-    this.setSideMenuHidden(false);
   }
 
   initComponent (title: string) {
     this.setTitle(title);
     this.setBackButtonHidden(false);
     this.setToolbarItems([]);
-    this.setSideMenuHidden(true);
   }
 
   setTitle(title: string) {

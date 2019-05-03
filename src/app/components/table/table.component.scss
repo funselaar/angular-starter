@@ -1,3 +1,19 @@
 .full-width-table {
   width: 100%;
 }
+
+th {
+  top: 64px !important;
+}
+
+@media (max-width: 599px) {
+  th {
+    top: 56px !important;
+  }
+}
+
+mat-paginator {
+  bottom: 0px;
+  position: sticky;
+  z-index: 10;
+}
